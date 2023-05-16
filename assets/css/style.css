@@ -132,6 +132,51 @@ p {
     opacity: 0.45;
     z-index: -1;
 }
-.accordion-header {
-    font-size: 20px;
+
+/* Gallery Touchup's */
+.gallPic img {
+    height: 230px;
+    object-fit: cover;
+    max-width: 100%;
+    border-radius: 20px;
+}
+.gallPic .col {
+    margin-bottom: 15px;
+}
+/* Small Screen size corrections */
+@media (max-width: 576px){
+    .gallPic .col {
+        margin-bottom: 40px;
+    }
+    .equal-width {
+        width: 100%;
+    }
+}
+.video-gallery {
+    position: relative;
+    padding: 40px;
+}
+.video-gallery::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/imgs/videoWrapper.jpg');
+    background-size: cover;
+    border-radius: 40px;
+    opacity: 0.55;
+    z-index: -1;
+}
+.video-item {
+    border-radius: 20px;
+    border: 1px solid black;
+}
+.list-unstyled li a i {
+    color: var(--clr-white);
+}
+.list-unstyled li a i:hover {
+    transform: scale(1.5);
+    transition: all 500ms;
 }

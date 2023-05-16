@@ -35,4 +35,9 @@ function validateForm() {
         return false;
     }
     document.querySelector('.status').innerHTML = "Sending...";
-  }
+}
+
+/* Lightbox using BaguetteBox Effect */
+baguetteBox.run(".gallery", {
+    animation: "slideIn"
+});
