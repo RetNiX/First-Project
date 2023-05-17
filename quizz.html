@@ -19,8 +19,6 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
             integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- BaguetteBox CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
         <!-- Personal CSS -->
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
@@ -132,58 +130,21 @@
                     </button>
                 </div>
             </div>
-            <!-- Media Section -->
-            <div class="container mt-4 mb-5">
-                <div class="gallery">
-                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 my-4 gallPic">
-                        <div class="col"><a href="./assets/imgs/gallary/gallery1.jpg"><img
-                                    src="./assets/imgs/gallary/gallery1.jpg" class="img-fluid equal-width" alt=""></a>
+            <!-- Quizz Test -->
+            <div class="container mb-5">
+                <div class="app-box">
+                    <h1>Mardi Gras Quizz - Come Rizz</h1>
+                    <div class="quiz">
+                        <h2 id="question">
+                        </h2>
+                        <div id="answer-btns">
+                            <button class="q-btn"></button>
+                            <button class="q-btn"></button>
+                            <button class="q-btn"></button>
+                            <button class="q-btn"></button>
+                            <button class="q-btn"></button>
                         </div>
-                        <div class="col"><a href="./assets/imgs/gallary/gallery2.webp"><img
-                                    src="./assets/imgs/gallary/gallery2.webp" class="img-fluid equal-width" alt=""></a>
-                        </div>
-                        <div class="col"><a href="./assets/imgs/gallary/gallery3.png"><img
-                                    src="./assets/imgs/gallary/gallery3.png" class="img-fluid equal-width" alt=""></a>
-                        </div>
-                        <div class="col"><a href="./assets/imgs/gallary/gallery4.jpg"><img
-                                    src="./assets/imgs/gallary/gallery4.jpg" class="img-fluid equal-width" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 my-4 gallPic">
-                        <div class="col"><a href="./assets/imgs/gallary/gallery5.jpg"><img
-                                    src="./assets/imgs/gallary/gallery5.avif" class="img-fluid equal-width" alt=""></a>
-                        </div>
-                        <div class="col"><a href="./assets/imgs/gallary/gallery6.jpg"><img
-                                    src="./assets/imgs/gallary/gallery6.jpg" class="img-fluid equal-width" alt=""></a>
-                        </div>
-                        <div class="col"><a href="./assets/imgs/gallary/gallery7.jpg"><img
-                                    src="./assets/imgs/gallary/gallery7.jpg" class="img-fluid equal-width" alt=""></a>
-                        </div>
-                        <div class="col"><a href="./assets/imgs/gallary/gallery8.jpg"><img
-                                    src="./assets/imgs/gallary/gallery8.jpg" class="img-fluid equal-width" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Video section -->
-            <div class="container mt-4 mb-5">
-                <div class="video-gallery">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <iframe class="video-item" width="100%" height="315"
-                                src="https://www.youtube.com/embed/C8mJ2C2cbd0" frameborder="0"
-                                allowfullscreen></iframe>
-                        </div>
-                        <div class="col-md-4">
-                            <iframe class="video-item" width="100%" height="315"
-                                src="https://www.youtube.com/embed/yprhfzPrr5E" frameborder="0"
-                                allowfullscreen></iframe>
-                        </div>
-                        <div class="col-md-4">
-                            <iframe class="video-item" width="100%" height="315"
-                                src="https://www.youtube.com/embed/4yh229vednc" frameborder="0"
-                                allowfullscreen></iframe>
-                        </div>
+                        <button id="next-btn">Next</button>
                     </div>
                 </div>
             </div>
@@ -195,30 +156,26 @@
                     </div>
                     <ul class="d-flex gap-3 list-unstyled">
                         <li><a href="https://www.facebook.com/MardiGrasNewOrleans"><i
-                                    class="fa-brands fa-facebook fa-xl" style="color:antiquewhite;"></i></a>
-                        </li>
+                                    class="fa-brands fa-facebook fa-xl"></i></a></li>
                         <li><a href="https://twitter.com/MardiGrasNOLA"><i class="fa-brands fa-twitter fa-xl"
                                     style="color:antiquewhite"></i></a></li>
                         <li><a href="https://www.instagram.com/mardigrasneworleans/"><i
-                                    class="fa-brands fa-instagram fa-xl" style="color:antiquewhite"></i></a>
-                        </li>
+                                    class="fa-brands fa-instagram fa-xl"></i></a></li>
                         <li><a href="https://www.youtube.com/channel/UCOrq1qF6dVDn9Do-wvbKh0Q"><i
-                                    class="fa-brands fa-youtube fa-xl" style="color:antiquewhite"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-github fa-xl" style="color:antiquewhite"></i></a>
+                                    class="fa-brands fa-youtube fa-xl"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-github fa-xl"></i></a>
                         </li>
-                        <li><a href="#" id="scrollToTop"><i class="fa-regular fa-circle-up fa-2xl"
-                                    style="color:antiquewhite"></i></a></li>
+                        <li><a href="#" id="scrollToTop"><i class="fa-regular fa-circle-up fa-2xl"></i></a></li>
                     </ul>
                 </div>
             </footer>
         </main>
+        <!-- Personal JS -->
+        <script defer src="assets/js/quizzJS.js"></script>
         <!-- Bootstrap JS -->
         <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
         <!-- BagueteBox JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
-        <!-- Personal JS -->
-        <script src="assets/js/main.js"></script>
-
     </body>
 
 </html>
